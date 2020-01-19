@@ -6,7 +6,7 @@ var cacheName = 'cache-v4';
 //Files to save in cache
 var files = [
   './',
-  './index.html?utm=homescreen', //SW treats query string as new request
+  // './index.html?utm=homescreen', //SW treats query string as new request
   'https://fonts.googleapis.com/css?family=Roboto:200,300,400,500,700', //caching 3rd party content
   './css/styles.css',
   './images/icons/android-chrome-192x192.png',
@@ -22,7 +22,23 @@ var files = [
   './js/toast.js',
   './js/share.js',
   './js/menu.js',
-  './manifest.json'
+  './manifest.json',
+  './',
+  './index.html',
+  './home.html',
+  './title.html',
+
+  './css/main.css',
+  'https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css',
+  'https://fonts.googleapis.com/css?family=Inconsolata|Lora:400,400i,700|Source+Sans+Pro:400,700',
+
+  './js/bundle.js',
+  './js/article.js',
+  './js/home.js',
+  './js/latest.js',
+  './js/saved.js',
+
+  './img/profile.png'
 ];
 
 //Adding `install` event listener

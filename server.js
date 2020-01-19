@@ -9,7 +9,9 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 
 //To server static assests in root dir
-app.use(express.static(__dirname));
+// app.use(express.static(__dirname));
+app.use(express.static("public"));
+app.use('/public', express.static(__dirname + '/public'));
 
 //To allow cross origin request
 app.use(function(req, res, next) {

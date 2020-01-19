@@ -10,7 +10,7 @@
 	},
 	"scripts": {
 		"start": "npm run css && node server.js",
-		"css": "postcss -u autoprefixer -r css/*"
+		"css": "postcss -u autoprefixer -r public/css/*"
 	},
 	"devDependencies": {
 		"autoprefixer": "^9.4.3",
